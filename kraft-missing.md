@@ -108,6 +108,8 @@ unclean.leader.election.enable=false
 ## ✅ Step 3 — Generate a cluster ID (REQUIRED)
 
 ```bash
+/opt/kafka/bin/kafka-storage.sh random-uuid
+
 kafka-storage.sh random-uuid
 ```
 
@@ -122,6 +124,11 @@ Y7n5xA1qSFiJf8K0XkJVZQ
 ## ✅ Step 4 — Format Kafka storage (MANDATORY)
 
 ```bash
+/opt/kafka/bin/kafka-storage.sh format \
+  -t Y7n5xA1qSFiJf8K0XkJVZQ \
+  -c /opt/kafka/config/server.properties
+
+
 kafka-storage.sh format \
   -t Y7n5xA1qSFiJf8K0XkJVZQ \
   -c /opt/kafka/config/server.properties
