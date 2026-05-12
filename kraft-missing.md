@@ -133,6 +133,10 @@ Y7n5xA1qSFiJf8K0XkJVZQ
 kafka-storage.sh format \
   -t Y7n5xA1qSFiJf8K0XkJVZQ \
   -c /opt/kafka/config/server.properties
+
+/opt/kafka/bin/kafka-storage.sh format \
+  -t chWwsnGsR2mNknRywUJPGg \
+  -c /opt/kafka/config/server.properties --standalone (my vm dev)
 ```
 
 ✅ This initializes KRaft metadata  
