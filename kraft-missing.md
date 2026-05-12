@@ -143,6 +143,8 @@ kafka-storage.sh format \
 ## ✅ Step 5 — Start Kafka broker
 
 ```bash
+/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
+
 kafka-server-start.sh /opt/kafka/config/server.properties
 ```
 
@@ -157,6 +159,8 @@ If successful, you’ll see logs like:
 ## ✅ Step 6 — Verify broker is reachable
 
 ```bash
+/opt/kafka/bin/kafka-broker-api-versions.sh --bootstrap-server <BROKER_IP>:9092
+
 kafka-broker-api-versions.sh --bootstrap-server <BROKER_IP>:9092
 ```
 
