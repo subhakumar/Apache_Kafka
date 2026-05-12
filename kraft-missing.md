@@ -123,10 +123,11 @@ Y7n5xA1qSFiJf8K0XkJVZQ
 
 ## ✅ Step 4 — Format Kafka storage (MANDATORY)
 
+--standalone For single node
 ```bash
 /opt/kafka/bin/kafka-storage.sh format \
   -t Y7n5xA1qSFiJf8K0XkJVZQ \
-  -c /opt/kafka/config/server.properties
+  -c /opt/kafka/config/server.properties --standalone
 
 
 kafka-storage.sh format \
